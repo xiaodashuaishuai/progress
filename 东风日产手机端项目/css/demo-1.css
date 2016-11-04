@@ -1,0 +1,121 @@
+#wrapper{
+	width:320px;
+	height:560px;	
+	overflow:hidden;
+	position:absolute; 
+	top:18px; 
+	left:50%;
+    margin-left:-160px;
+	background:#111;
+}
+div.screen{
+	width:640px;
+	overflow:hidden;
+	position:absolute; 
+	top:0px; 
+	left:0px;
+	background:#000;
+}
+div.screen.animate{
+	left:500px;
+}
+
+.list{margin-top:36px; text-align:left;}
+.item{
+	height:115px;
+	margin-top:30px 0;
+	padding-left:115px;
+	clear:both;
+}
+.item .img, .item span{background:#214273; border-radius:3px;}
+.item .img{float:left; width:71px; height:71px; margin-left:-93px;}
+.item span{height:11px; width:180px; margin-bottom:19px; float:left;}
+.item span:nth-of-type(3){width:75px; margin-bottom:0;}
+
+div.burger {
+	height: 30px; 
+	width: 40px;
+	position: absolute;
+	top: 7px; 
+	left: 21px;
+	cursor: pointer;	
+	z-index: 888;
+}
+div.x,
+div.y,
+div.z {
+	position: absolute; margin: auto;
+	top: 0px; bottom: 0px;		
+	background: #fff;
+	border-radius:2px;
+}		
+div.x, div.y, div.z {
+	height: 3px;
+	width: 26px;
+}
+div.y{top: 18px;}
+div.z{top: 32px;}	 
+div.open div.x, div.open div.z{
+	top:19px;
+}
+div.navbar{
+	height:73px;
+	background:#385e97;
+}
+div.menu {
+	width: 400px;
+	opacity:1;	
+	position:relative;
+	overflow: hidden;
+}
+div.menuFoot{
+	width: 300px;
+    height: 80pt;
+    float: right;
+    background-color: #000;
+    margin: 50px 0 0 50px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+div.menuFoot a{
+	height: 30pt;
+	line-height: 30pt;
+	text-align: right;
+	color: rgba(255,90,0,1);
+	font-size: 16pt;
+	margin-left: -50px;
+	float: left;
+}
+#menu-bg{
+	position: absolute;
+	left: -10px;
+	top: -120px;	
+	opacity: 1;
+}
+div.menu ul{
+	margin: 30px 0 30px 50px;
+	position:relative;
+	overflow: hidden;
+	float: left;
+}
+div.menu ul li {
+	list-style: none;
+	width: 320px;
+	margin-top: 40px;
+	text-align: left;
+	font-size: 23px;
+    float: left;
+}
+div.menu ul li a {
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	margin-left: 10px;
+	color:rgb(221,221,221);
+	text-decoration:none;	
+	letter-spacing:1px;	
+}
+div.menu.animate ul li {
+	margin-left:80px; 
+	float: left;
+}

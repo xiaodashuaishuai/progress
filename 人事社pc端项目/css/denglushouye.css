@@ -1,0 +1,188 @@
+.dneglu_nr {
+    width: 100%;
+    background: url(../images/dl_bg1.png) 0 0 no-repeat;
+    height: 1000px;
+    position: relative;
+}
+.dneglu_nr-1{
+    width: 100%;
+    background: url(../images/banner0.png) 0 0 no-repeat;
+    height: 1000px;
+    position: relative; 
+}
+.dl_kuang {
+    width: 527px;
+    height: 438px;
+    position: absolute;
+    border: 5px solid #fff;
+    top: 50%;
+    margin-top: -219px;
+    left: 50%;
+    margin-left: -263px;
+}
+.dl_kuang_lg {
+    width: 527px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.dl_kuang_user {
+    width: 527px;
+    height: 90px;
+    margin-top: 12px;
+}
+.dl_kuang_tishi {
+    width: 411px;
+    height: 28px;
+    line-height: 28px;
+    color: #e9e9e9;
+    font-size: 14px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.dl_kuang_input {
+    width: 411px;
+    height: 40px;
+    border: 2px solid #f3f3f3;
+    margin: 0px auto 0px;
+}
+.dl_kuang_input input{
+    width: 401px;
+    height: 40px;
+    line-height: 50px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 18px;
+    background: 0;
+    border: 0px;
+}
+.dl_wjmm_l {
+    width: 150px;
+    padding-left: 22px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+}
+.dl_wjmm_l input {
+    width: 16px;
+    height: 15px;
+    margin-left: -90px;
+    z-index: 50;
+    cursor: pointer;
+}
+.dl_wjmm_r {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #e50112;
+    float: right;
+    text-align: right;
+}
+.dl_kuang_input label{
+	color: #AB4848;
+}
+.dl_wjmm_r a{
+	color: #000;
+}
+.dl_wjmm_r a:hover{
+	color: red;
+}
+.dl_wjmm {
+    height: 50px;
+    width: 415px;
+    margin: 0 auto;
+}
+.dl_btn {
+    width: 210px;
+    height: 37px;
+    margin: 20px auto 0px;
+}
+.dl_btn input {
+    display: block;
+    width: 210px;
+    height: 37px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #e50112;
+    cursor: pointer;
+    border: 0px;
+}
+.dl_zhucu {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.dl_zhucu a:hover{
+	color: red;
+}
+.dl_kuang_user .dl_kuang_input1{
+    width: 401px;
+    height: 40px;
+    border: 0px solid #f3f3f3;
+    margin-left: 56px;
+}
+.dl_kuang_user .dl_kuang_input1 input{
+    width: 160px; 
+    padding-left: 0px;
+    border: 2px solid #f3f3f3;
+    float:left;
+}
+.dl_kuang_input1 img {
+    float: left;
+    width: 80px;
+    height: 28px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.dl_kuang_input1 .kanbuqing{
+    display: block;
+    width: 107px;
+    height: 28px;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    line-height: 36px;
+    margin-top: 12px;
+    cursor: pointer;
+    margin-left: 22px;
+}
+.cg_nr_zi {
+    padding-left: 14%;
+    padding-right: 14%;
+    height: 87px;
+    color: #fff;
+    text-align: center;
+    margin-top: 95px;
+    font-size: 16px;
+}
+.cg_nr_zi span {
+cursor: pointer;
+}
+.cg_nr_zi span:hover{
+    color: red;
+}
+.slecet_css {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: url(../images/bai_select.png) 390px 13px no-repeat;
+}
+.slecet_css option {
+    /* background-color: #000; */
+    color: #666;
+}

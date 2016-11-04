@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>买车吧</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/mcb-wap.css">
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/default.css">
+    <link rel="stylesheet" type="text/css" href="../css/loaders.css" />
+	<link rel="icon" type="images/x-icon" href="../img/icon.png" mce_href="../img/icon.png">
+	<script type="text/javascript" src="../script/jquery.min.js"></script>
+	<script src="https://cdn1.lncld.net/static/js/av-mini-0.5.8.js"></script>
+	<script type="text/javascript" src="../script/AV.analytics.js"></script>
+	<script type="text/javascript" src="../js/mcb-wap-key.js"></script>
+	<script type="text/javascript" src="../script/swiper.jquery.min.js"></script>
+	<script type="text/javascript" src="../script/ort.js"></script>
+	<script type="text/javascript" src="../js/mcb-wap-modifym.js"></script>
+</head>
+<body style="background-color:#fff; padding:0;">
+
+	<div class="mcb_wrap">
+		<div class="cars_head">
+			<div class="cars_head_left"><img src="../img/bignext@3x.png"></div>
+			<div class="cars_head_zhong">修改密码</div>
+			<div class="cars_head_right"></div>
+		</div>
+	</div>
+
+	<div class="mcb_login container-fluid" style="padding:0;">
+		<div class="login_head">
+			<!-- <img src="../img/mcb-icon.png"> -->
+		</div>
+		<div class="prompt"></div>
+		<div class="login_mian">
+			<input class="login_password" type="password" placeholder="当前密码" onclick="clearDefaultText(this,'当前密码')">
+			<input class="login_passwordx" type="password" placeholder="新密码" onclick="clearDefaultText(this,'新密码')">
+			<input class="login_passwordq" type="password" placeholder="确认新密码" onclick="clearDefaultText(this,'确认新密码')">
+			<input class="modifym_modifym" type="button" value="确&nbsp;&nbsp;认">
+		</div>
+		<!-- <div class="clak_go">返回</div> -->
+	</div>
+
+	<script type="text/javascript">
+		//焦点事件:
+	    function clearDefaultText (el,message){
+			var obj = el;
+			if(typeof(obj) == "string")
+			obj = document.getElementById(id);
+			if(obj.placeholder == message){
+			obj.placeholder = "";
+			}
+			obj.onblur = function(){
+				if(obj.placeholder == ""){
+				   obj.placeholder = message;
+				}
+			}
+		}
+	</script>
+</body>
+</html>

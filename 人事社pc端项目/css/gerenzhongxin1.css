@@ -1,0 +1,177 @@
+.geren_1 {
+    width: 1206px;
+    margin: 0 auto;
+    border: 1px solid #c8c8c8;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+.geren_2 {
+    overflow: hidden;
+    text-align: center;
+}
+.geren_3 {
+    width: 603px;
+    float: left;
+    padding: 30px 0;
+    cursor: pointer;
+}
+.geren_3 h2 {
+    font-size: 24px;
+    color: #333333;
+}
+.geren_3 h4 {
+    font-size: 14px;
+    color: #e40014;
+}
+.geren_4 {
+    position: relative;
+    height: 572px;
+}
+.chaxun_datu_bot_page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.chaxun_datu_bot_page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.chaxun_datu_bot_dis {
+    display: block;
+}
+.chaxun_datu_left_bot_1_1 {
+    background: url(../images/zengj2.png) 0 0 no-repeat;
+}
+.chaxun_datu_left_bot_1_2 {
+    background: url(../images/baoxiao2.png) 0 0 no-repeat;
+}
+.chaxun_datu_left_bot_1_3 {
+    background: url(../images/gongzi2.png) 0 0 no-repeat;
+}
+.chaxun_datu_left_bot_1_4 {
+    background: url(../images/kongjian2.png) 0 0 no-repeat;
+}
+.chaxun_datu_left_bot_1_5{
+    background: url(../images/zj2.png) 0 0 no-repeat;
+}
+.chaxun_datu_left_bot_1_6 {
+    background: url(../images/jd2.png) 0 0 no-repeat;
+}
+.chaxun_datu_left_bot_1_7 {
+    background: url(../images/mc2.png) 0 0 no-repeat;
+}
+.chaxun_datu_left_bot_1_8 {
+    background: url(../images//mx2.png) 0 0 no-repeat;
+}
+.chaxun_datu_bot_page1_left {
+    float: left;
+    border-right: 1px solid #eee;
+    width: 602px;
+    margin-top: 30px;
+}
+.chaxun_datu_bot_page1_right{
+    float: right;
+    width: 603px;
+    margin-top: 30px;
+}
+.chaxun_datu_left_bot_s{
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.chaxun_datu_left_bot_s:hover{
+	color: red;
+	font-weight: bold;
+}
+.chaxun_datu_left_bot_x {
+    overflow: hidden;
+}
+.chaxun_datu_left_bot_1 {
+    float: left;
+    cursor: pointer;
+    margin: 0 80px 30px 80px;
+    position: relative;transition:0.6s;
+    transform-style:preserve-3d;
+}
+.yuan{
+    width: 136px;
+    height: 136px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background: red;
+    color: #E4FA02;
+    overflow: hidden;
+    transform: rotateY(-180deg);
+    
+}
+.nima{
+    background: url(../images/zengj1.png) 0 0 no-repeat;
+}
+.nima1{
+    background: url(../images/baoxiao1.png) 0 0 no-repeat;
+}
+.nima2{
+    background: url(../images/gongzi1.png) 0 0 no-repeat;
+}
+.nima3{
+    background: url(../images/kongjian1.png) 0 0 no-repeat;
+}
+.nima4{
+    background: url(../images/zj1.png) 0 0 no-repeat;
+}
+.nima5{
+    background: url(../images/jd1.png)0 0 no-repeat;
+}
+.nima6{
+    background: url(../images/mc1.png)0 0 no-repeat;
+}
+.nima7{
+    background: url(../images/mx1.png)0 0 no-repeat;
+}
+.yuan a{
+    float: left;
+    width: 136px;
+    height: 136px;
+    color: #E4FA02;
+    border-radius: 50%;
+}
+.chaxun_datu_left_bot_1 div {
+    width: 136px;
+    height: 136px;
+    margin-bottom: 30px;
+}
+.chaxun_datu_left_bot_1 p {
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}	
+.chaxun_datu_left_bot_1 p:hover{
+	color: red;
+	font-weight: bold;
+}
+.chaxun_datu_left_bot_1:hover{
+    transform: rotateY(180deg);
+};
+.yuan,.back{
+position: absolute;
+left: 0px;top: 0px;
+backface-visibility:hidden;
+}
+.back{
+    background: #fff;
+    position: absolute;
+    top: 0px;
+}
+.yuan_1,.back{
+position: absolute;
+left: 0px;
+top: 0px;
+backface-visibility:hidden;
+}

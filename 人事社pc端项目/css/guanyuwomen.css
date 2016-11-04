@@ -1,0 +1,113 @@
+.diyi{
+    width: 1195px;
+    height: 320px;
+    margin: 0 auto;
+}
+.diyi div {
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+.diyi p {
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.diwu div:hover{
+	color: red;
+	font-size: 19px;
+}
+.dier {
+    width: 100%;
+    height: 401px;
+    min-width: 1200px;
+    background: url(../images/gywm1.jpg) center center no-repeat;
+}
+.disan{
+    width: 100%;
+    height: 434px;
+    min-width: 1200px;
+    background: url(../images/gywm2.jpg) center center no-repeat;
+}
+.disi {
+    width: 100%;
+    height: 426px;
+    min-width: 1200px;
+    background: url(../images/gywm3.jpg) center center no-repeat;
+}
+.diwu {
+    width: 100%;
+    height: 246px;
+    min-width: 1200px;
+    background: url(../images/gywm4.png) center center no-repeat;
+    z-index: 50;
+    position: relative;
+}
+.diwu p {
+    height: 75px;
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    line-height: 80px;
+    cursor: pointer;
+}
+.diwu div {
+    color: #666;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+.diliu {
+    /* height: 433px; */
+    height: 204px;
+    background: url(../images/gywm6.png) center center no-repeat;
+    margin-top: -50px;
+    z-index: 1;
+}
+.diqi{
+    height: 204px;
+    position: relative;
+}
+.diba{
+    width: 100%;
+    height: 204px;
+    line-height: 204px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    font-size: 28px;
+    top: 0px;
+    z-index: 3;
+    cursor: pointer;
+}
+.diwu .dishi{
+    height: 90px;
+    background: url(../images/gywm5.png) center center no-repeat;
+    cursor: pointer;
+}
+.dijiu{
+    width: 100%;
+    height: 204px;
+    /* background: url(../images/gywm7.png) center center no-repeat; */
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+p:hover{	
+	color:red;
+	font-size: 18px;
+}

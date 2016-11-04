@@ -1,0 +1,313 @@
+.tupian{
+	margin-top: 75px;
+	width: 100%;
+	height: 320px;
+	background: url(../images/chaxundatu1.png) 0 0 no-repeat;
+}
+.lietou_list_tu {
+    width: 1212px;
+    height: 420px;
+    margin: 0 auto;
+}
+#push .profiles_1{
+    float: left;
+    width: 290px;
+    height: 358px;
+    margin-left: 10px;
+    position: right: ;elative;
+    overflow: hidden;
+    cursor: pointer;
+}
+		
+    .xiaotu{
+    width: 100%;
+    height: 566px;
+    background: url(../images/ICON-01.png) 0 0 no-repeat;
+} 
+.xiaotu_l {
+    width: 1212px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 66px;
+}
+.xiaotu_l li {
+    width: 134px;
+    float: left;
+    /*height: 134px;*/
+    margin-right: 67px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+ .xiaotu_l li div:nth-child(1) {
+    border-color: rgb(206, 218, 230);
+    width: 134px;
+    height: 134px;
+    border: 1px solid #cedae6;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+} 
+.xiaotu_l_top{
+    background: url(../images/iconH-0.png) 26px 21px no-repeat;
+}
+.xiaotu_l_top1{
+    background: url(../images/iconH-1.png) 26px 21px no-repeat;
+}
+.xiaotu_l_top2{
+    background: url(../images/iconH-2.png) 26px 21px no-repeat;
+}
+.xiaotu_l_top3{
+    background: url(../images/iconH-3.png) 26px 21px no-repeat;
+}
+.xiaotu_l_top4{
+    background: url(../images/iconH-4.png) 26px 21px no-repeat;
+}
+.xiaotu_l_top5{
+    background: url(../images/iconH-5.png) 26px 21px no-repeat;
+}
+
+.xiaotu_l_top6{
+    background: url(../images/iconH-6.png) 26px 21px no-repeat;
+}
+.xiaotu_l_top7{
+    background: url(../images/iconH-7.png) 26px 21px no-repeat;
+}
+.xiaotu_l_top8{
+    background: url(../images/iconH-8.png) 26px 21px no-repeat;
+}
+.xiaotu_l_top9{
+    background: url(../images/iconH-9.png) 26px 21px no-repeat;
+}
+.xiaotu_l_top10{
+    background: url(../images/iconH-10.png) 26px 21px no-repeat;
+}
+.xiaotu_l_top11{
+    background: url(../images/iconH-11.png) 26px 21px no-repeat;
+}
+.xiaotu_l li div:nth-child(1):hover{
+    border: 1px solid #040489;
+    animation-name:jian;
+    animation-duration:1s;
+    animation-timimg-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:alternate;
+    background-position: 26px 21px; 
+}
+.xiaotu_l_top:hover{
+    background: url(../images/iconcolor-0.png) 26px -100px no-repeat;
+}
+.xiaotu_l_top1:hover{
+     background: url(../images/iconcolor-1.png) 26px -100px no-repeat;
+}
+.xiaotu_l_top2:hover{
+     background: url(../images/iconcolor-2.png) 26px -100px no-repeat;
+}
+.xiaotu_l_top3:hover{
+     background: url(../images/iconcolor-3.png) 26px -100px no-repeat;
+}
+.xiaotu_l_top4:hover{
+     background: url(../images/iconcolor-4.png) 26px -100px no-repeat;
+}
+.xiaotu_l_top5:hover{
+     background: url(../images/iconcolor-5.png) 26px -100px no-repeat;
+}.xiaotu_l_top6:hover{
+     background: url(../images/iconcolor-6.png) 26px -100px no-repeat; 
+}
+.xiaotu_l_top7:hover{
+     background: url(../images/iconcolor-7.png) 26px -100px no-repeat;
+}
+.xiaotu_l_top8:hover{
+     background: url(../images/iconcolor-8.png) 26px -100px no-repeat;
+}
+.xiaotu_l_top9:hover{
+     background: url(../images/iconcolor-9.png) 26px -100px no-repeat;
+}
+.xiaotu_l_top10:hover{
+     background: url(../images/iconcolor-10.png) 26px -100px no-repeat;
+}
+.xiaotu_l_top11:hover{
+     background: url(../images/iconcolor-11.png) 26px -100px no-repeat;
+}
+@keyframes jian{
+    from{background-position: 26px -100px;}
+    to{background-position: 26px 21px;}
+}
+.xiaotu_botom {
+    width: 134px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+}
+.leixing{
+	width: 100%;
+    padding-top: 60px;
+}
+.leixing_list_ul{
+	width: 1212px;
+    /* height: 622px; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+.leixing_list_la1{
+	width: 50%;
+    float: left;
+}
+.leixing_list_la2{
+	width: 50%;
+    float: right;
+}
+.leixing_last_ul li{
+	width: 96%;
+    float: left;
+    /* padding-left: 10px; */
+    overflow: hidden;
+} 
+.leixing_li_top{
+	height: 30px;
+    line-height: 22px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: #002e79;
+}
+.leixing_li_top:hover{
+	color: red;
+}
+.leixing_li_bottom{
+	height: 70px;
+    overflow: hidden;
+}
+.leixing_li_bottom_hide div:hover{
+	color: red;
+	font-size: 25px;
+	font-weight: bold;
+}
+.leixing_li_bottom div:hover{
+	color: red;
+	font-size: 18px;
+	font-weight: bold;
+}
+.leixing_li_bottom div {
+    height: 33px;
+    float: left;
+    line-height: 33px;
+    font-size: 16px;
+    color: #555555;
+    width: 50%;
+    /* margin-right: 76px; */
+    cursor: pointer;
+    overflow: hidden;
+}
+.leixing_li_bottom_hide{
+	 display: none; 
+}
+.leixing_li_bottom_hide div{
+	height: 33px;
+    float: left;
+    line-height: 33px;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+    width: 50%;
+    overflow: hidden;
+}
+.leixing_li_top_more {
+    height: 30px;
+    line-height: 22px;
+    font-size: 16px;
+    color: #002e79;
+    font-weight: normal;
+    float: right;
+    margin-right: 30px;
+}
+.leixing_list_ul_li_float{
+	width: 96%;
+    float: left;
+    /* padding-left: 10px; */
+    overflow: hidden;
+}
+.qiu{
+    left: 70px;
+    box-shadow: 8px 8px 21px 5px #333;
+    transition: all 1s;
+    }
+    .qiu,.qiu1{
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    color: #FADB02;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    background: black;
+    top: 470px;
+    cursor: pointer;
+    background: radial-gradient(circle at 100px 100px, #5cabff, #000); 
+    }
+    .qiu:hover{
+    transform:scale(1.2,1.2);
+    }
+
+    .qiu1:hover{
+    transform:scale(1.2,1.2);
+    }
+    .qiu1{
+    box-shadow: 8px 8px 21px 5px #333;
+    transition: all 1s;
+    right:  70px;
+    }
+    .profiles, .info { 
+    list-style:none; 
+    cursor:pointer; 
+    }
+    .profiles > li {
+    width:243; height:350px;
+    float:left;
+    margin-left:10px; 
+      }
+    .info, .pic {
+        position:absolute;
+     }
+    .info { 
+    font-family: 'Lato', sans-serif;
+    font-size:18px;
+    padding:5px; 
+    background-color:rgba(157, 136,136, 0.2);
+    width:260px;
+    height:320px;
+    opacity:0;
+    border-radius: 30px;
+    text-align:center;
+    line-height: 120px;
+     }
+    .info li{ 
+    font-weight:bold;
+    font-size:30px; 
+    color:#3C6A9A;
+     }
+    .info a:hover 
+    { 
+    text-decoration:underline; 
+        }
+    .pic { 
+    width:280px; 
+    height:350px; 
+        }
+    #push .info { 
+    transition: all 0.3s; 
+    transition-delay:0.2s; }
+    #push .pic {
+    transition: all 0.5s;
+          }
+    #push li:hover .info {
+    opacity:1; 
+     }
+    #push li:hover .pic {
+    opacity:0.7; 
+    transform: scale(0.7) rotate(10deg)
+     }

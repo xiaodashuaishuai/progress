@@ -1,0 +1,200 @@
+.chaxun_wu{
+	width: 100%;
+	background-color: #fafafa;
+}
+.chaxunzhongxin{
+    height: 60px;
+    line-height: 70px;
+    font-size: 18px;
+    text-align: center;
+    color: #222222;
+    font-weight: bold;
+}
+.chaxun_1{
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #e40008;
+}
+.chaxun_tupian {
+    width: 1268px;
+    height: 610px;
+    margin: 20px auto;
+}
+.chaxun_tupian li {
+    width: 288px;
+    height: 244px;
+    padding-top: 12px;
+    border: 2px solid #333;
+    float: left;
+    border-radius: 30px;
+    margin-right: 16px; 
+    margin-top: 20px;
+    cursor: pointer;
+    position:relative;
+    transition:0.6s;
+    transform-style:preserve-3d;
+}
+.chaxun_tupian li .jian_zhuan{
+    position: absolute;
+    top: 0px;
+    backface-visibility: hidden; 
+    left: 0px;
+}
+.nide{
+    overflow: hidden;
+    text-align: center;
+    width: 288px;
+    height: 257px;
+    background: red;
+    line-height: 60px;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    border-radius: 27px;
+    backface-visibility: hidden;
+    transform:rotateY(-180deg);
+    background: -webkit-linear-gradient(top,orange,#B2FF00,#C6A4E5,#957595);
+    background: -moz-linear-gradient(top,orange,#B2FF00,#C6A4E5,#957595);
+    background: -o-linear-gradient(top,orange,#B2FF00,#C6A4E5,#957595);
+    background: linear-gradient(top,orange,#B2FF00,#C6A4E5,#957595);
+}
+.nide span{ 
+    font-size: 30px;
+    color: red;
+}
+.nide a{
+    opacity:0.4;
+    float: left;
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    line-height:50px;
+    font-size: 30px;
+    text-align: center;
+    background: pink;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+#divReimHistory .nide{
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+}
+.chaxun_tupian li:hover{
+    transform:rotateY(180deg);
+}
+/*.chaxun_tupian #divReimHistory:hover{
+    transform:rotateX(180deg);
+}*/
+.jjj_zhuan{
+	overflow: hidden;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    float: left;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 270px;
+}
+.jjj_zhuan div{
+	float: left;
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+	border-radius:50%;
+	margin-top: 5px;
+	margin-left: 5px;
+	background: #000;
+}
+.jjj_zhuan div div{
+	float: left;
+	width: 40px;
+	overflow: hidden;
+	height: 40px;
+	background: #fff;
+	border-radius: 50%;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.jjj_zhuan div div div{
+	float: left;
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+	background: #000;
+	border-radius: 50%;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.jjj_zhuan div div div div{
+	float: left;
+	width: 20px;
+	overflow: hidden;
+	height: 20px;
+	background: #fff;
+	border-radius: 50%;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.jjj_zhuan div div div div div{
+	float: left;
+	width: 10px;
+	height: 10px;
+	background: #000;
+	border-radius: 50%;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.chaxun_nr_tu{
+    width: 261px;
+    height: 147px;
+    left: 15px;
+    top: 13px;
+}
+.chaxun_nr_tu1{
+	background: url(../images/000.png) 0 0 no-repeat;
+}
+.chaxun_nr_tu3 {
+    background: url(../images/chaxun_li1.png) 0 0 no-repeat;
+}
+.chaxun_nr_tu2 {
+    background: url(../images/chaxun_li3.png) 0 0 no-repeat;
+}
+.chaxun_nr_tu4 {
+    background: url(../images/chaxun_li4.png) 0 0 no-repeat;
+}
+.chaxun_tupian .chaxun_nr_long {
+    width: 592px;
+}
+.beijing{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url(../images/lianjie.png) 0 0 no-repeat;
+}
+#divReimHistory .chaxun_nr_tu{
+	width: 539px;
+}
+.chaxun_nr_tu {
+    width: 262px;
+    height: 147px;
+    margin: 0 auto;
+    position: relative;
+}
+.zimu{
+    width: 100%;
+    height: 93px;
+    line-height: 93px;
+    color: #6b6b6b;
+    font-size: 18px;
+    text-align: center;
+}
+.zimu:hover{
+	color: red;
+	font-size: 22px;
+}

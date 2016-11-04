@@ -1,0 +1,94 @@
+.zengjian_head_list2 li .qq{
+    width: 145px;
+}
+.biaoge{
+    width: 1200px;
+    border: 1px solid #cccccc;
+    border-right: 0px solid #cccccc;
+    margin-top: 10px;
+    overflow: hidden;
+    background-color: #fafafa;
+}
+.biaoge_1{
+    width: 100%;
+}
+.biaoge_1 li{
+    color: #333;
+    overflow: hidden;
+    text-align: center;
+    border-right: 1px solid #cccccc;
+    float: left;
+    cursor: pointer;
+    font-size: 12px;
+}
+.biaoge_1 li:nth-child(1){
+    width: 32px;
+    line-height: 62px;
+    height: 62px;
+}
+.biaoge_1 li:nth-child(2){
+    width: 54px;
+    height: 62px;
+    line-height: 62px;
+}
+.biaoge_1 li:nth-child(3){
+    width: 42px;
+    height: 62px;
+    line-height: 62px;
+}
+.biaoge_1 li:nth-child(4),li:nth-child(5),li:nth-child(8),li:nth-child(9){
+    width: 182px;
+    line-height: 30px;
+    height: 30px;
+    border-bottom: 1px solid #cccccc;
+
+}
+.biaoge_1 li:nth-child(6),li:nth-child(7){
+    width: 121px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #cccccc;
+}
+.biaoge_1 li:nth-child(10){
+    width: 92px;
+    height: 31px;
+    line-height: 31px;
+}
+.biaoge_1 li:nth-child(11),li:nth-child(12),li:nth-child(13),li:nth-child(14),li:nth-child(15),li:nth-child(16),li:nth-child(17),li:nth-child(18),li:nth-child(19),li:nth-child(20),li:nth-child(21),li:nth-child(22),li:nth-child(23),li:nth-child(24),li:nth-child(25),li:nth-child(26){
+    width: 60px;
+    height: 31px;
+    line-height: 31px;
+}
+.biaoge_1 li:nth-child(27){
+    width: 92px;
+    height: 31px;
+    line-height: 31px;
+}
+.baioge_xia{
+    width: 1199px;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    height: 83px;
+    line-height: 83px;
+    overflow: hidden;
+    color: #b21617;
+    font-size: 14px;
+}
+.baioge_xia div:nth-child(1){
+    width: 456px;
+    float: left;
+    height: 83px;
+    text-align: right;
+}
+.baioge_xia div:nth-child(2){
+    width: 272px;
+    float: left;
+    height: 83px;
+    text-align: center;
+}
+.baioge_xia div:nth-child(3){
+    width: 470px;
+    float: left;
+    height: 83px;
+    text-align: left;
+}

@@ -1,0 +1,175 @@
+.gongji {
+    width: 1000px;
+    margin: 0 auto;
+    height: 556px;
+}
+.gongji_1{
+    height: 50px;
+    line-height: 60px;
+    font-size: 13px;
+    text-align: left;
+    color: #666;
+    cursor: pointer;
+}
+.gongji_2{
+    width: 600px;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #2e2d2e;
+}
+.gongji_3{
+	float:left;
+    width: 196px;
+    height: 47px;
+    background: url(../images/fengexian1.png) 0 1px no-repeat;
+}
+.gongji_4{
+	cursor: pointer;
+    height: 50px;
+    width: 208px;
+    line-height: 50px;
+    font-size: 24px;
+    color: #2e2d2e;
+    float: left;
+    text-align: center;
+}
+.gongji_5{
+    width: 196px;
+    height: 47px;
+    background: url(../images/fengexian2.png) 0 1px no-repeat;
+    float: right;
+}
+.gongji_6{
+    width: 480px;
+    height: 240px;
+    margin: 20px auto;
+}
+.gongji_7 {
+    height: 88px;
+}
+.gongji_8{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 2px;
+    color: #606060;
+    cursor: pointer;
+    font-size: 16px;
+}
+.gongji_9{
+    width: 476px;
+    height: 45px;
+    border: 2px solid #d2d2d2;
+}
+.gongji_9 input {
+    width: 470px;
+    height: 45px;
+    border: 0px solid #000;
+    font-size: 16px;
+    color: #606060;
+}
+.gongji_10{
+    display: block;
+    width: 480px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    background-color: #00307c;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.renli{
+    width: 100%;
+    background-color: #f0f1f6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.renli_1{
+    width: 914px;
+    margin: 0px auto;
+    padding-top: 105px;
+    padding-left: 86px;
+    background-color: #fff;
+    position: relative;
+    padding-right: 86px;
+    overflow: hidden;
+}
+.beijingtubiao{
+    height: 80px;
+    position: absolute;
+    top: -17px;
+    left: 86px;
+}
+.lil{
+    height: 79px;
+    background-color: #6987b2;
+    line-height: 79px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.zpxx {
+    width: 690px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    height: 60px;
+    cursor: pointer;
+}
+.zpxx li:hover{
+    color: red;
+}
+.zpxx li {
+    width: 230px;
+    height: 30px;
+    line-height: 30px;
+    color: #2c2c2c;
+    float: left;
+    font-size: 14px;
+}
+.zwyaoqiu {
+    width: 100%;
+    margin-bottom: 40px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.zwyaoqiu .zwyaoqiu_head {
+    padding-left: 10px;
+    border-left: 4px solid #002876;
+    color: #282828;
+    font-size: 25px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.zwyaoqiu li {
+    color: #727272;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+.MsoNormal span{
+    line-height: 30px;
+}
+.sqzhiwei_btn {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #00307c;
+    margin-left: 314px;
+    margin-bottom: 30px;
+}
+.zwyaoqiu li p:hover{
+    color: red;
+    font-size: 18px;
+}

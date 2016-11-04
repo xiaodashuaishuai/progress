@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>买车吧</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/mcb-wap-community.css">
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/default.css">
+    <link rel="stylesheet" type="text/css" href="../css/loaders.css" />
+	<link rel="icon" type="images/x-icon" href="../img/icon.png" mce_href="../img/icon.png">
+	<script type="text/javascript" src="../script/jquery.min.js"></script>
+	<script src="https://cdn1.lncld.net/static/js/av-mini-0.5.8.js"></script>
+	<script type="text/javascript" src="../script/AV.analytics.js"></script>
+	<script type="text/javascript" src="../js/mcb-wap-key.js"></script>
+	<script type="text/javascript" src="../script/swiper.jquery.min.js"></script>
+	<script type="text/javascript" src="../script/ort.js"></script>
+	<script type="text/javascript" src="../js/mcb-wap-posted.js"></script>
+</head>
+<body>
+
+	<div class="mcb_wrap">
+		<div class="cars_head">
+			<div class="cars_head_left"><img src="../img/bignext@3x.png"></div>
+			<div class="cars_head_zhong">创建帖子</div>
+			<div class="cars_head_right post_send">[发贴]</div>
+		</div>
+	</div>
+
+	<div class="mcb_community container-fluid">
+		<div class="post_title">
+			<div class="post_title_cont">标题：</div>
+			<input type="text" value="" class="post_title_info">
+		</div>
+	</div>
+
+	<div class="mcb_community container-fluid" style="padding:0;background-color:#fff;border-bottom: 1px solid #DBDBDB;">
+		<textarea class="post_comment" placeholder="请填写帖子内容" value=""></textarea>
+		<div class="pic_show">
+			<!-- <div class="img_out">
+				<div></div>
+				<img src="../img/bangmaipic.jpg">
+				<textarea placeholder="添加描述"></textarea>
+			</div> -->
+		</div>
+		<img src="../img/addphoto@3X.png" class="phone_log">
+		<input type="file" class="phone_file" id="phone_filed">
+		<div class="phone_url" style="display:none;"></div>
+	</div>
+
+	<div class="mcb_community container-fluid" style="padding:0;background-color:#fff;">
+		<div class="post_theme">
+			<div class="post_theme_in">选择板块</div>
+			<div class="post_theme_bama">
+				<div class="post_theme_son">美女与车<span class="fourmclassid">55b3c0dd00b0bb80c444831d</span></div>
+				<div class="post_theme_son">车先生<span class="fourmclassid">55b3bfba00b0bb80c4447ad0</span></div>
+				<div class="post_theme_son">好玩儿<span class="fourmclassid">55b3c0fd00b0bb80c44483ff</span></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mcb_community container-fluid" style="padding:0;background-color:#fff;">
+		<div class="post_label">
+			<div class="post_label_in">选择标签</div>
+		</div>
+	</div>
+
+	<div class="post_label_bamaout">
+		<div class="post_label_head">
+			<div class="cars_head">
+				<div class="label_head_back"><img src="../img/bignext@3x.png"></div>
+				<div class="cars_head_zhong">添加标签</div>
+				<div class="cars_head_right label_head_pic"></div>
+			</div>
+		</div>
+		<div class="post_label_bama">
+			
+		</div>
+	</div>
+<script type="text/javascript">
+	//焦点事件
+	function clearDefaultText (el,message){
+		var obj = el;
+		if(typeof(obj) == "string")
+		obj = document.getElementById(id);
+		if(obj.placeholder == message){
+		obj.placeholder = "";
+		}
+		obj.onblur = function(){
+			if(obj.placeholder == ""){
+			    obj.placeholder = message;
+			    if (message == "选择看车时间（三天以内）") {
+		    		$(".chioce_day li").css({backgroundColor:"#fff",color:"#000"});
+			    };
+			}
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>支付结果</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/mcb-wap.css">
+	<link rel="icon" type="images/x-icon" href="../img/icon.png" mce_href="../img/icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="../script/AV.analytics.js"></script>
+	<script type="text/javascript" src="../script/jquery.min.js"></script>
+	<script src="https://cdn1.lncld.net/static/js/av-mini-0.5.8.js"></script>
+	<script type="text/javascript" src="../js/mcb-wap-key.js"></script>
+	<script type="text/javascript" src="../script/ort.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../css/lato.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/flavr.css">
+    <script type="text/javascript" src="../script/flavr.min.js"></script>
+
+</head>
+<body>
+	<div class="mcb_wrap">
+		<img class="PayResultImg">
+		<label id="PayResultTitle"></label><br>
+		<label id="PayResultContent"> 正在处理订单状态,请稍等 </label>
+	</div>
+</body>
+	<script type="text/javascript">
+
+		var url = window.location.href;
+		var urlString = url.toString();
+		var string =  urlString.split("html?")[1];	
+		var array = string.split("&");
+		var orderId ;
+		var car_id;
+		var isNowCar = false;
+		var success = false;
+		for (var i = 0; i < array.length; i++) {
+			var str =  array[i];
+			var arr = str.split("=");
+			if (arr[0] == "out_trade_no") {
+				orderId = arr[1];
+			};
+			if (arr[0] == "car_id") {
+				car_id = arr[1];
+				isNowCar = false;
+			};
+			if (arr[0] == "nowCar_id") {
+				car_id = arr[1];
+				isNowCar = true;
+			};
+			if (arr[0] == "trade_status" && arr[1] == "TRADE_SUCCESS") {
+				success = true;
+			};
+		};
+		//支付成功
+		if (success == true) {
+			$(".PayResultImg").attr("src","../img/success.png");
+			$("#PayResultTitle").html("支付成功");
+
+			queryOrder(function(){
+				if (isNowCar == false) {
+					window.open("mcb-wap-subscribe.php?id="+car_id+"&order="+orderId,"_self");
+				}else{
+					window.open("mcb-wap-orderCar.php?id="+car_id+"&order="+orderId,"_self");
+				}
+			});
+			
+		}else{
+			$(".PayResultImg").attr("src","../img/error.png");
+			$("#PayResultTitle").html("支付失败");
+			setTimeout(function () {
+				if (isNowCar == false) {
+					window.open("mcb-wap-subscribe.php?id="+car_id,"_self");
+				}else{
+					window.open("mcb-wap-orderCar.php?id="+car_id,"_self");
+				}
+			},2000);
+		}
+
+		function queryOrder (callback) {
+			var qOrder = new AV.Query("Order");
+			qOrder.equalTo("identifier",orderId);
+			qOrder.find().then(function (isOrder) {
+			
+				var avUser  = AV.User.current();
+				var order = isOrder[0];
+				order.set("user",avUser);
+				order.save().then(function(){
+					callback();
+				},function(){
+					new $.flavr("订单保存失败，请联系客服。");
+				});
+			},function () {
+				new $.flavr("订单保存失败，请联系客服。");
+			});
+		}
+
+
+
+	</script>
+</html>
