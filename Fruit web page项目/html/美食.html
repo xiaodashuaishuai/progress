@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>瀑布流1</title>
+<style>
+	body{
+	background: linear-gradient(90deg,#2571BB,#47433E,#363330,green,#F40606,#F611BA,#07E5E7,#CFA625,#917DBC,#5216D9);
+	}
+	*{margin: 0;padding: 0;list-style: none;}
+	#outer{width: 1200px;overflow: hidden;margin: 0 auto;}
+	#outer ul{width: 250px;margin: 0 10px;float: left;}
+	#outer ul li{width: 248px;border: 1px solid #000;}
+	#outer ul li img{width: 248px;height: 100%;display: block;}
+	#tt{width: 30px;
+	height: 100px;
+	position: static;
+	right: 0px;bottom: 0;
+	background-color: yellow;
+	text-align: center;
+	line-height: 25px;
+	font-weight: bold;
+	border-radius: 30px;
+	cursor: pointer;
+	}
+</style>
+</head>
+<body>
+	<div id="outer">
+		<ul>
+			 <!--<li><img src="../zz/5.jpg" alt=""></li>--> 
+		</ul>
+		<ul>
+			 <!--<li><img src="../zz/5.jpg" alt=""></li> >--> 
+		</ul>
+		<ul>
+			 <!--<li><img src="../zz/5.jpg" alt=""></li>--> 
+		</ul>
+		<ul>
+			 <!--<li><img src="../zz/5.jpg" alt=""></li>-->  
+		</ul>
+	</div>
+	<div id="tt">返回顶部</div>
+</body>
+<script>
+	var outer=document.getElementById('outer');
+	var uls=outer.children;
+	function  appendli(){
+		var oli=document.createElement('li');
+		oli.innerHTML='<img src="'+'../zz/'+(Math.ceil(Math.random()*35))+'.jpg" alt="">';
+		oli.style.height=(Math.floor(Math.random()*200)+150)+'px';
+		var uls1_h=uls[0].offsetHeight;
+		var uls2_h=uls[1].offsetHeight;
+		var uls3_h=uls[2].offsetHeight;
+		var uls4_h=uls[3].offsetHeight;
+		var ul_min=null;
+		var ul_h=Math.min(uls1_h,uls2_h,uls3_h,uls4_h);
+		for (var i = 0; i < uls.length; i++) {
+			if(uls[i].offsetHeight==ul_h){
+				ul_min=uls[i];
+			}
+		};
+		ul_min.appendChild(oli);
+	}
+	for (var i = 0; i < 20; i++) {
+		appendli();
+	};
+	document.onscroll=function(){
+		var scrolltop=document.body.scrollTop||document.documentElement.scrollTop;
+		var wh=document.documentElement.clientHeight;
+		var docH=document.documentElement.offsetHeight;
+		if((docH-wh)-600<scrolltop){
+			for (var i = 0; i < 16; i++) {
+				appendli();
+			};
+		}
+	}
+	var totop=document.getElementById('tt');
+	var str=window.navigator.userAgent.toLowerCase();
+	var wh=document.documentElement.clientHeight;
+	var scrolltop=document.body.scrollTop||document.documentElement.scrollTop;
+	var totoph=totop.offsetHeight;
+	if(str.indexOf('msie 6')!=-1){
+			totop.style.top=wh-totoph+scrolltop+'px';
+		}else{
+			totop.style.position='fixed';
+		}
+	totop.onclick=function(){
+		var time=null;
+		var scrolltop=document.body.scrollTop||document.documentElement.scrollTop;
+		var start=scrolltop;
+		var end=0;
+		var step=0;
+		var every=(end-start)/30;
+		time=setInterval(function(){
+			step++;
+			if(step>=30){
+				clearInterval(time);
+			}
+			start+=every;
+			document.body.scrollTop=start;
+			document.documentElement.scrollTop=start;
+		},100);
+	}
+</script>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		body{
+			background: #000;
+		}
+		canvas{
+			/*background: #ddd;*/
+			margin-left: 450px;
+		}
+	</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="700"></canvas>
+	</body>
+</html>
+<script>
+	window.onload=function(){
+			var then=new Date().getTime();
+			var canvas=document.getElementById("canvas");
+			var ctx=canvas.getContext("2d");
+			var arr=[];
+			ctx.globalAlpha=0.5;
+			ctx.fillStyle="red";
+			setInterval(function(){
+				var nowTime=new Date().getTime();
+				var lag=(nowTime-then)/1000;
+				then=nowTime;
+				ctx.clearRect(0,0,canvas.width,canvas.height);
+				for(var i=0;i<arr.length;i++){
+					arr[i].num+=5;
+					arr[i].scaleNum-=0.005;
+					arr[i].distanceNum-=(0.1*30)*lag;
+					ctx.beginPath();
+					ctx.save();
+					ctx.translate(canvas.width/2,canvas.height/2);
+					ctx.rotate(arr[i].num*Math.PI/120);
+					ctx.scale(arr[i].scaleNum,arr[i].scaleNum);
+					ctx.fillRect(arr[i].distanceNum,0,80,60);
+//					ctx.shawColor='blue';
+//					ctx.shadowBlur=80;
+					ctx.restore();
+					if(arr[i].scaleNum<0){
+						arr.splice(i,1);
+					}
+				}
+			},40);
+			setInterval(function(){
+				var arrInit={
+					num:0,
+					scaleNum:1,
+					distanceNum:300
+				};
+				arr.push(arrInit);
+			},80);
+		}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

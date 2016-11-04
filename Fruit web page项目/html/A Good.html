@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>点名器</title>
+	<style>
+	body{
+		background: #000;
+	}
+	h1{
+		font-size: 80px;
+		color: red;
+		text-align: center;
+		cursor: pointer;
+	}
+	div{
+		font-size: 120px;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+	}
+	img{
+		width: 600px;
+		height: 600px;
+	}
+	</style>
+</head> 
+<body>
+	<h1 id="tip">start</h1>
+	<div id="con">开始</div>
+</body>
+<script>
+var arr=['<img src="../images/images/2.jpg" alt="">','<img src="../images/images/3.jpg" alt="">','<img src="../images/images/4.jpg" alt="">','<img src="../images/images/5.jpg" alt="">','<img src="../images/images/6.jpg" alt="">','<img src="../images/images/7.jpg" alt="">','<img src="../images/images/8.jpg" alt="">','<img src="../images/images/9.jpg" alt="">','<img src="../images/images/10.jpg" alt="">','<img src="../images/images/11.jpg" alt="">','<img src="../images/images/12.jpg" alt="">','<img src="../images/images/13.jpg" alt="">','<img src="../images/images/14.jpg" alt="">','<img src="../images/images/15.jpg" alt="">','<img src="../images/images/16.jpg" alt="">','<img src="../images/images/17.jpg" alt="">','<img src="../images/images/18.jpg" alt="">','<img src="../images/images/17.jpg" alt="">','<img src="../images/images/19.jpg" alt="">','<img src="../images/images/20.jpg" alt="">'];
+var timer=null;
+var flag=0;
+tip.onclick=function(){
+	if(flag==0){	
+		flag=1;
+		tip.innerHTML="stop";
+		timer=setInterval(function(){
+			con.innerHTML=arr[Math.floor(Math.random()*arr.length)];
+			//con1.innerHTML=bao[Math.floor(Math.random()*bao.length)];
+		},10);
+	}else{
+		flag=0;
+		tip.innerHTML="start"; 
+		clearInterval(timer);
+	}
+	
+}
+document.onkeydown=function(){
+	if(flag==0){
+		flag=1;
+		tip.innerHTML="stop";
+		timer=setInterval(function(){
+			con.innerHTML=arr[Math.floor(Math.random()*arr.length)];
+			//con1.innerHTML=bao[Math.floor(Math.random()*bao.length)];
+		},10);
+	}else{
+		flag=0;
+		tip.innerHTML="start";
+		clearInterval(timer);
+	}
+}
+</script>
+</html>
